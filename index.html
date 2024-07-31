@@ -10,22 +10,25 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
   </head>
   <body>
     <!-- MAIN PAGE -->
 
     <header class="header">
-      <a href="#" class="logo">Nishant <span>Sinha</span></a>
+      <a href="#home" class="logo">Nishant <span>Sinha</span>|Portfolio.</a>
       <nav class="navbar">
-        <a href="#" style="--i: 1" class="active">Home</a>
-        <a href="#" style="--i: 2">About</a>
-        <a href="#" style="--i: 3">Skills</a>
-        <a href="#" style="--i: 4">Portfolio</a>
-        <a href="#" style="--i: 5">Contact</a>
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#services" style="--i: 3">Services</a>
+        <a href="#skills" style="--i: 4">Skills</a>
+        <a href="#project" style="--i: 4">Project</a>
+        <a href="#contact" style="--i: 5">Contact</a>
       </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
       <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Nishant Sinha</h1>
@@ -60,6 +63,8 @@
           <a href="#" class="btn-box"> More About Me</a>
         </div>
       </div>
+    </div>
+    <span class="home-imgHover"></span>
     </section>
 
     <!-- ABOUT ME SECTION -->
@@ -68,10 +73,10 @@
       <!-- <div class="about-img">
         <img src="./Allimages/forabout.png" />
       </div> -->
-      <div class="about-text">
+      <div class="about-text" style="font-weight: 600;">
         <h2>About <span>Me</span></h2>
-        <h4>Full Stack Developer!</h4>
-        <p>
+        <h4><span class="typed-text"></span></h4>
+        <p data-aos="fade-left" >
           I am a versatile full-stack developer with a passion for building
           robust, scalable web applications. Proficient in both front-end (HTML,
           CSS, JavaScript, React) and back-end (Python, Sql, JavaScript)
@@ -82,184 +87,247 @@
           ensures high-quality solutions that exceed expectations. Feel free to
           explore my portfolio and get in touch at
           <a href="mailto:nishantsinha0808@gmail.com"
-            >nishantsinha0808@gmail.com</a
-          >
+            >nishantsinha0808@gmail.com</a>
           or visit my website at
           <!--[www.myportfolio.com]-->.
+
+<br>
+<br>
+          <a href="#" class="btn-box" style="color: black;" >More About Me</a>
         </p>
-        <a href="#" class="btn-box">More About Me</a>
+        
       </div>
     </section>
 
     <!-- MY SERVICES -->
 
-    <!-- <section>
+    <section>
       <div class="services" id="services">
         <div class="container">
-          <h1 class="sub-title" style="color: black">
+          <h1 class="sub-title" style="color: black; font-weight:600;">
             My <span>Services</span>
           </h1>
-          <div class="services-list">
-            <div>
-              <i class="bx bxl-html5" style="color: rgb(255, 255, 255)"></i>
-              <h2>HTML</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                cupiditate deleniti atque omnis, eos placeat quam iste
-                voluptatibus eaque voluptate minus cum quidem? Dolorum quae,
-                aperiam excepturi sapiente consequatur nostrum
-              </p>
-              <a href="#" class="read">Learn more</a>
+          <div class="services-list" >
+            <div class="div" data-aos="fade-left" >
+              <img src="/Allimages/coding_2010990.png" alt="web-development" class="w-16 h-16 object-contain" style="align-items:center;">
+              <br> <br> <h2>Web Developer</h2>
+              
             </div>
-            <div>
-              <i class="bx bxl-css3" style="color: rgb(255, 255, 255)"></i>
-              <h2>CSS</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                cupiditate deleniti atque omnis, eos placeat quam iste
-                voluptatibus eaque voluptate minus cum quidem? Dolorum quae,
-                aperiam excepturi sapiente consequatur nostrum
-              </p>
-              <a href="#" class="read">Learn more</a>
+            <div class="div" data-aos="fade-right" >
+              <img src="/Allimages/graphic-design_1071928.png" alt="web-development" class="w-16 h-16 object-contain" style="align-items:center;">
+              <br> <br><h2>Web Designer</h2>
             </div>
-            <div>
-              <i
-                class="bx bxl-postgresql"
-                style="color: rgb(255, 255, 255)"
-              ></i>
-              <h2>SQL</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                cupiditate deleniti atque omnis, eos placeat quam iste
-                voluptatibus eaque voluptate minus cum quidem? Dolorum quae,
-                aperiam excepturi sapiente consequatur nostrum
-              </p>
-              <a href="#" class="read">Learn more</a>
+            <div class="div" data-aos="fade-left" >
+              <img src="/Allimages/programmer_2092474.png" alt="web-development" class="w-16 h-16 object-contain" style="align-items:center;">
+              <br> <br><h2>Backend Developer</h2>
             </div>
-            <div>
-              <i class="bx bxl-python" style="color: rgb(255, 255, 255)"></i>
-              <h2>Python</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                cupiditate deleniti atque omnis, eos placeat quam iste
-                voluptatibus eaque voluptate minus cum quidem? Dolorum quae,
-                aperiam excepturi sapiente consequatur nostrum
-              </p>
-              <a href="#" class="read">Learn more</a>
-            </div>
-            <div>
-              <i
-                class="bx bxl-javascript"
-                style="color: rgb(255, 255, 255)"
-              ></i>
-              <h2>JavaScript</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                cupiditate deleniti atque omnis, eos placeat quam iste
-                voluptatibus eaque voluptate minus cum quidem? Dolorum quae,
-                aperiam excepturi sapiente consequatur nostrum
-              </p>
-              <a href="#" class="read">Learn more</a>
+            <div class="div" data-aos="fade-right" >
+              <img src="/Allimages/development_16128422.png" alt="web-development" class="w-16 h-16 object-contain" style="align-items:center;">
+              <br> <br><h2>Frontend Developer</h2>
             </div>
           </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- MY SKILLS SECTION -->
-
-    <h1 class="sub-title" style="color: black">My <span>Skills</span></h1>
-    <section>
-      <div class="container1" id="Skills">
-        <h1 class="heading1">Technical Skills</h1>
-        <div class="Technical-bars">
-          <div class="bar">
-            <i class="bx bxl-html5" style="color: #c95d2e"></i>
-            <div class="info">
-              <span>HTML</span>
-            </div>
-            <div class="progress-line html">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-css3" style="color: #147bbc"></i>
-            <div class="info">
-              <span>CSS</span>
-            </div>
-            <div class="progress-line css">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-postgresql" style="color: grey"></i>
-            <div class="info">
-              <span>SQL</span>
-            </div>
-            <div class="progress-line sql">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-python" style="color: #c32ec9"></i>
-            <div class="info">
-              <span>Python</span>
-            </div>
-            <div class="progress-line python">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-javascript" style="color: yellow"></i>
-            <div class="info">
-              <span>JavaScript</span>
-            </div>
-            <div class="progress-line Javascript">
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container1">
-        <h1 class="heading1">Professional Skills</h1>
-        <div class="radial-bars">
-          <svg x="0px" y="0px" viewBox="0 0 200 200">
-            <circle class="progess-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">90%</div>
-          <div class="text">Creativity</div>
-        </div>
-        <div class="radial-bars">
-          <svg x="0px" y="0px" viewBox="0 0 200 200">
-            <circle class="progess-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">65%</div>
-          <div class="text">Communication</div>
-        </div>
-
-        <div class="radial-bars">
-          <svg x="0px" y="0px" viewBox="0 0 200 200">
-            <circle class="progess-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">75%</div>
-          <div class="text">Problem Solving</div>
-        </div>
-
-        <div class="radial-bars">
-          <svg x="0px" y="0px" viewBox="0 0 200 200">
-            <circle class="progess-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">85%</div>
-          <div class="text">Teamwork</div>
         </div>
       </div>
     </section>
 
+    <section>
+      <!-- <div class="xs:w-[250px] w-full" style="will-change: transform; transition: 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99); transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);"><div class="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card" style="opacity: 1; transform: none;"><div options="[object Object]" class="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"><img src="/assets/web-0d05165f.png" alt="web-development" class="w-16 h-16 object-contain"><h3 class="text-white text-[20px] font-bold text-center">Web Developer</h3></div></div></div> -->
+    </section>
+
+    <!-- MY SKILLS SECTION -->
+
+    <h1 class="sub-title" style="color: black; font-weight:600;">My <span>Skills</span></h1>
+
+    <section>
+
+        <div class="container1" id="skills">
+
+
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars" data-aos="fade-left" >
+                <div class="bar"data-aos="fade-left"><i style="color:#c95d2e" class="bx bxl-html5"></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"data-aos="fade-left"><i style="color:#147bbc" class="bx bxl-css3"></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"data-aos="fade-left"><i style="color:#b0bc1e" class="bx bxl-javascript"></i>
+                    <div class="info">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"data-aos="fade-left"><i style="color:#c32ec9" class='bx bxl-python'></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"data-aos="fade-left"><i style="color:#69BCBC" class='bx bxl-postgresql'></i></i>
+                    <div class="info">
+                        <span>SQL</span>
+                    </div>
+                    <div class="progress-line sql">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container1">
+            <h1 class="heading1">Professional Skills</h1>
+            <div class="radial-bars" data-aos="fade-right" >
+
+                <div class="radial-bar" data-aos="fade-right" >
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Creativity</div>
+                </div>
+
+                <div class="radial-bar"data-aos="fade-right" >
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">65%</div>
+                    <div class="text">Communication</div>
+                </div>
+
+                <div class="radial-bar"data-aos="fade-right" >
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">Problem Solving</div>
+                </div>
+
+                <div class="radial-bar"data-aos="fade-right" >
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">Teamwork</div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section>
+  <div id="portfolio" id="project">
+    <div class="main-text" id="project">
+      <h2 style="color: black; font-weight:600;">Latest <span> Project</span></h2>
+
+      <div class="portfolio-content">
+        <div class="row"data-aos="fade-left">
+          <img src="./Allimages/3dbike.png" >
+          <div class="layer">
+            <h5>3D BIKE SIMULATION</h5>
+            <p>write about this project</p>
+            <a href="https://github.com/thor0802/3d-bike-sim-using-oepngl.git"><i class='bx bxl-github' style="color:black" ></i></a>
+          </div>
+        </div>
+      
+
+
+      
+        <div class="row"data-aos="fade-right">
+          <img src="./Allimages/pic1.jpg" >
+          <div class="layer">
+            <h5>PHARMACY-MANAGEMENT-SYSTEM-MASTER</h5>
+            <p>This program can be used in any pharmaceutical shops having a database to maintain. The software used can generate reports, as per the user’s requirements. The software can print invoices, bills, receipts etc. It can also maintain the record of supplies sent in by the supplier. Here, the admin who are handling the organization will be responsible to manage the record of the employee. Each employee will be given with a separate username and password.</p>
+            <a href="https://github.com/thor0802/Pharmacy-Management-System-master.git">
+              <i class='bx bxl-github' style="color:black">
+
+              </i></a>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact-text" data-aos="fade-left" >
+        <h2>Contact <span>Me</span></h2>
+        <h4>Let's Work Together!!</h4>
+        <div class="contact-list"data-aos="fade-right">
+            <li><i class='bx bxs-send'data-aos="fade-left"></i> nishantsinha0808@gmail.com</a></li>
+            <li><i class='bx bx-phone-call'data-aos="fade-left"></i> 7488179857</a></li>
+        </div>
+        <div class="contact-icons">
+            <a href=""><i class='bx bxl-facebook-circle'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+
+        </div>
+    </div>
+    <div class="contact-form">
+        <form action="">
+            <input type="" placeholder="Enter Your Name" required data-aos="fade-right">
+            <input type="email" placeholder="Enter Your Email" required data-aos="fade-left">
+
+            <input type="" placeholder="Enter Your Subject" data-aos="fade-right">
+            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required data-aos="fade-left"></textarea>
+            <input type="submit" value="Submit" class="send" >
+
+
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<div class="last-text">
+  <p style="color: rgb(255, 253, 253);">Developed by NishantSinha©2024 </p>
+</div>
+
+<a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+
+
+
+
+
+
+
+
     <script src="./mainterm.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
