@@ -7,7 +7,7 @@
 }
 body {
   color: #ededed;
-  background-color: #081b29;
+  background-color: black;
   /* background: #081b29; */
 }
 .header {
@@ -152,7 +152,7 @@ body {
 }
 .about-text h2 {
   font-size: 60px;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   /* opacity: 0;
   animation: slideRight 1s ease forwards;
@@ -327,7 +327,7 @@ section {
   border-radius: 10px;
   width: 100%;
   height: 5px;
-  background-color: #000;
+  background-color: #ffffff;
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
   transform: scaleX(0);
   transform-origin: left;
@@ -365,7 +365,7 @@ section {
 .progress-line span::after {
   position: absolute;
   padding: 1px 8px;
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
   font-size: 12px;
   border-radius: 3px;
@@ -432,7 +432,7 @@ section {
 }
 .radial-bars .radial-bar .progress-bar {
   stroke-width: 10;
-  stroke: black;
+  stroke: rgb(255, 255, 255);
   fill: transparent;
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
@@ -604,7 +604,7 @@ section {
   font-size: 200px;
   text-align: center;
   line-height: 1;
-  color: #000;
+  color: #ffffff;
 }
 .contact-text h2 span {
   color: #0ef;
